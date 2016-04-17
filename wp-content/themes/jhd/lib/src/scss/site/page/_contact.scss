@@ -1,0 +1,111 @@
+body.contact {
+
+  .map {
+
+    background: $color-testimonials-banner-bg url("../../dist/img/page-contact/map/bg-map.jpg") no-repeat center / cover;
+    padding-top: 405px;
+    margin-bottom: 50px;
+
+  }
+
+  .content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .subheading {
+    span {
+      display: block;
+    }
+  }
+
+  .details {
+    border-left: 1px solid $color-page-contact-details-border;
+    font-family: open_sansregular, Arial, Helvetica;
+    margin-top: 10px;
+    ul {
+      @include reset-list-reset;
+      li {
+        background: url("../../dist/img/page-contact/details/bg-details.png") no-repeat top left;
+        color: $color-page-contact-details-copy;
+        padding-left: 80px;
+        min-height: 70px;
+
+        a {
+          color: $color-page-contact-details-copy;
+        }
+
+        &.tel, &.email {
+          padding-top: 15px;
+        }
+        &.email {
+          background-position: 0 -220px;
+        }
+        &.address {
+          background-position: 0 -440px;
+        }
+      }
+    }
+  }
+
+
+}
+
+// Media Queries
+
+// Large Desktop
+
+@media (min-width: 1170px) {
+  body.contact {
+    .gravity-form {
+      padding-right: 20px;
+
+      .gform_wrapper {
+        ul {
+          &.gform_fields {
+            li {
+
+              input, textarea {
+                width: 93%;
+              }
+              &#field_1_4 {
+                right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .details {
+      padding-right: 20px;
+    }
+
+  }
+}
+
+// Small Desktop
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  body.contact {
+
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body.contact {
+
+  }
+}
+
+// Mobile
+
+@media (max-width: 767px) {
+  body.contact {
+    .map {
+      background-position: -533px 0;
+    }
+  }
+}

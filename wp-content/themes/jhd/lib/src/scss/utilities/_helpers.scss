@@ -1,0 +1,12 @@
+// Centering Bootstrap Content
+
+.center-col-block {
+  @include center-col-block;
+}
+
+// Image Full
+
+.img-responsive-full {
+  width: 100%;
+  max-width: none;
+}

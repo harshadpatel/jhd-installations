@@ -1,0 +1,128 @@
+.about{
+  background: $color-about-bg;
+  padding: 50px 0;
+
+  .content {
+    margin-top: 90px;
+    overflow: hidden;
+  }
+
+  h2 {
+    color: $color-global-green;
+    font-size: 60px;
+  }
+
+  p {
+    font-family: open_sansregular, Arial, Helvetica;
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+
+  .bottom-cta {
+    .btn {
+      margin-right: 45px;
+    }
+
+    img {
+      margin-right: 15px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    .professional-bodies {
+      display: inline;
+    }
+  }
+
+}
+
+
+// Media Queries
+
+// Small Desktop
+
+@media (min-width: 992px) {
+  .about {
+    .bottom-cta {
+      .professional-bodies {
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about {
+
+    .content {
+      margin-top: 40px;
+    }
+
+    .image {
+      margin-top: 30px;
+    }
+
+    .bottom-cta {
+
+      .professional-bodies {
+        bottom: 0;
+        display: block;
+        margin-top: 30px;
+        position: absolute;
+        right: -235px;
+
+      }
+
+    }
+  }
+}
+
+// Tablet
+
+@media (max-width: 767px) {
+
+  .about {
+
+    .content {
+      margin-top: 40px;
+    }
+
+    .image {
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 50px;
+      margin-top: 0;
+    }
+
+    .copy {
+      text-align: center;
+    }
+
+    .bottom-cta {
+      .professional-bodies {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: block;
+
+        img {
+          width: 130px;
+        }
+
+      }
+
+      .btn {
+        display: table;
+        margin: 0 auto;
+      }
+    }
+  }
+}

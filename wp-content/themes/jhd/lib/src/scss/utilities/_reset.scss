@@ -1,0 +1,8 @@
+blockquote {
+  @include blockquote-reset;
+}
+
+@include placeholder {
+  font-size: 14px;
+  text-transform: uppercase;
+}

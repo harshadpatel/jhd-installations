@@ -1,0 +1,113 @@
+body.testimonials {
+
+  .banner {
+
+    background: $color-testimonials-banner-bg url("../../dist/img/page-testimonials/banner/bg-banner-top.jpg") no-repeat center / cover;
+    padding-top: 86px;
+    padding-bottom: 0;
+
+    &.bottom {
+      background: $color-testimonials-banner-bg url("../../dist/img/page-testimonials/banner/bg-banner-bottom.jpg") no-repeat center / cover;
+    }
+  }
+
+  .page-testimonials {
+    padding-bottom: 75px;
+    padding-top: 60px;
+
+    .content {
+      padding-top: 30px;
+    }
+
+    .copy {
+      padding-top: 70px;
+
+      .name {
+        border-left: 1px solid $color-global-green;
+        color: $color-global-green;
+        font-family: open_sansregular,Arial,Helvetica;
+        font-size: 24px;
+        letter-spacing: 1px;
+        padding-left: 15px;
+        margin-bottom: 50px;
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+
+    blockquote {
+      background: url("../../dist/img/page-testimonials/backgrounds/bg-stars.png") no-repeat top center;
+      color: $color-page-testimonials-copy;
+      font-size: 24px;
+      font-style: italic;
+      line-height: 40px;
+      padding: 90px 0 45px 0;
+    }
+
+    .btn {
+      display: table;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+
+  }
+
+
+}
+
+// Media Queries
+
+// Small Desktop
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  body.testimonials {
+
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body.testimonials {
+    .page-testimonials {
+
+      .content {
+        padding-top: 0;
+      }
+
+      .copy {
+        &:first-of-type {
+          padding-top: 40px;
+        }
+      }
+
+    }
+  }
+}
+
+// Mobile
+
+@media (max-width: 767px) {
+  body.testimonials {
+    .page-testimonials {
+
+      .content {
+        padding-top: 0;
+      }
+
+      .copy {
+        &:first-of-type {
+          padding-top: 40px;
+        }
+      }
+      .btn {
+        font-size: 10px;
+      }
+
+      blockquote {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}

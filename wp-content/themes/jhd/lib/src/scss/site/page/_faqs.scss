@@ -1,0 +1,68 @@
+body.faqs {
+
+  .banner {
+
+    background: $color-faqs-banner-bg url("../../dist/img/page-faqs/banner/bg-banner-faqs.jpg") no-repeat center / cover;
+    padding-top: 86px;
+    padding-bottom: 0;
+  }
+
+  .subheading {
+    margin-bottom: 20px;
+  }
+
+  .page-faq {
+    padding-top: 60px;
+    padding-bottom: 75px;
+
+    h2 {
+      color: $color-faqs-h2;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 40px;
+      margin-top: 55px;
+      margin-bottom: 25px;
+      text-transform: none;
+    }
+
+    p {
+      font-size: 24px;
+      font-family: open_sansregular, Arial, Helvetica;
+    }
+  }
+
+}
+
+// Media Queries
+
+// Small Desktop
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  body.faqs {
+
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body.faqs {
+
+  }
+}
+
+// Mobile
+
+@media (max-width: 767px) {
+  body.faqs {
+    .page-faq {
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.module-case-studies {
+  background: $color-global-green;
+  font-size: 24px;
+  padding-top: 85px;
+  padding-bottom: 75px;
+  color: $color-white;
+
+  .content {
+    min-height: 248px;
+    overflow: hidden;
+  }
+
+  .copy {
+    float: left;
+    
+    blockquote {
+      background: url("../../dist/img/shared/quotes/quote-white.png") no-repeat top center transparent;
+      color: $color-case-studies-copy;
+      font-family: "Georgia", "Times New Roman", sans-serif;
+      font-style: italic;
+      font-size: 24px;
+      padding-top: 110px;
+      float: left;
+    }
+
+    .name {
+      border-left: 1px solid $color-white;
+      color: $color-white;
+      font-family: open_sansregular,Arial,Helvetica;
+      letter-spacing: 1px;
+      padding-left: 15px;
+      text-transform: uppercase;
+    }
+  }
+
+  .pager
+    a {
+    background: none repeat scroll 0 0 $color-white;
+
+    &.selected {
+      background: $color-case-studies-pager-selected;
+    }
+  }
+}
+
+// Media Queries
+
+// Mobile
+
+
+@media (max-width: 767px){
+  .module-case-studies {
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    .copy {
+      blockquote {
+        padding-top: 60px;
+      }
+    }
+  }
+}

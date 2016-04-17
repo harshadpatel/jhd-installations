@@ -1,0 +1,29 @@
+.btn-cta-light-green {
+  background: #add4cb;
+  color: #404040;
+  font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-style: italic;
+  padding: 15px 25px;
+  @include border-radius(0);
+
+  &:hover, &:focus {
+    background: #404040;
+    color: #add4cb;
+  }
+}
+
+// Media Queries
+
+// Mobile
+
+
+@media (max-width: 767px){
+  .btn-cta-light-green {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+}
+

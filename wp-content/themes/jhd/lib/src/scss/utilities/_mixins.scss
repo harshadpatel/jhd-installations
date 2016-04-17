@@ -1,0 +1,23 @@
+@mixin reset-list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin blockquote-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@mixin center-col-block {
+  margin: 0 auto;
+  float: none;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}

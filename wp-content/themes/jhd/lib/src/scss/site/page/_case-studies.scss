@@ -1,0 +1,381 @@
+body.case-studies {
+
+  .banner {
+
+    background: $color-page-case-studies-banner-bg url("../../dist/img/page-case-studies/banner/bg-banner.jpg") no-repeat center / cover;
+    color: $color-white;
+    padding-bottom: 100px;
+
+    .copy {
+      blockquote {
+        background: url("../../dist/img/shared/quotes/quote-white.png") no-repeat top center transparent;
+        padding-top: 80px;
+      }
+
+      h2 {
+        font-size: 50px;
+        color: $color-page-case-studies-heading;
+      }
+    }
+  }
+
+  .product-items {
+
+    padding-bottom: 100px;
+
+    .content {
+      margin-top: 90px;
+    }
+
+    .copy {
+      border: 0;
+
+      .image {
+        padding: 0 0 30px 0;
+      }
+
+      h2 {
+        color: $color-page-studies-client-heading;
+        font-size: 50px;
+      }
+
+      p {
+        font-family: open_sansregular, Arial, Helvetica;
+        padding: 0 0 15px 0;
+        font-size: 13px;
+      }
+    }
+
+  }
+}
+
+// Media Queries
+
+// Large Desktop
+
+@media (min-width: 1170px) {
+  body.case-studies {
+    .banner {
+      background-position: center;
+    }
+  }
+}
+
+// Small Desktop
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  body.case-studies {
+    .banner {
+      background-position: -270px 0;
+    }
+
+    .product-items {
+      .copy {
+        p {
+          min-height: 110px;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body.case-studies {
+
+    .banner {
+      background-position: -470px 0;
+    }
+    .product-items {
+      .content {
+        margin-top: 45px;
+
+        .item {
+          margin-top: 30px;
+        }
+
+        .copy {
+          p {
+            font-family: open_sansregular, Arial, Helvetica;
+            padding: 0 0 15px 0;
+            font-size: 13px;
+            padding-left: 140px;
+            padding-right: 140px;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+
+@media (max-width: 767px) {
+  body.case-studies {
+    .banner {
+      background-position: -190px 0;
+      padding-bottom: 50px;
+    }
+
+    .product-items {
+      padding-top: 45px;
+      padding-bottom: 45px;
+
+      .content {
+        margin-top: 30px;
+      }
+    }
+
+  }
+}
+
+// Single Case Studies
+
+body.single-case-studies {
+
+  .banner {
+    padding-bottom: 100px;
+    background-color: $color-page-case-studies-banner-bg;
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .copy {
+      blockquote {
+        background: url("../../dist/img/shared/quotes/quote-green.png") no-repeat top center transparent;
+        padding-top: 80px;
+      }
+
+    }
+  }
+
+  .article {
+    padding-top: 40px;
+
+    h2 {
+      color: $color-single-studies-article-heading;
+      font-size: 60px;
+      margin-top: 0;
+    }
+
+    p {
+      color: $color-single-studies-article-copy;
+      font-family: open_sansregular, Arial, Helvetica;
+      line-height: 24px;
+    }
+
+    .content {
+      overflow: hidden;
+      padding: 70px 0;
+
+      &.during{
+        text-align: right;
+        padding-right: 0;
+        padding-left: 15px;
+      }
+
+      &.before {
+        .image {
+          margin-top: 15px;
+        }
+      }
+    }
+
+
+  }
+
+  .treatment {
+    background: $color-single-studies-treatment-bg;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+      background: url("../../dist/img/single-case-studies/treatment/bg-treatment-triangle.png") no-repeat center transparent;
+      content: "";
+      width: 33px;
+      height: 16px;
+      position: absolute;
+      left: 49%;
+      top: -16px;
+    }
+
+    .copy {
+      margin-top: 100px;
+      margin-bottom: 65px;
+      h2 {
+        color: $color-clients-heading;
+        font-size: 60px;
+        margin-top: 0;
+      }
+
+      p {
+        color: $color-single-studies-treatment-copy;
+        font-family: "open_sansregular", Arial, Helvetica;
+        line-height: 25px;
+      }
+
+      .btn {
+        margin-top: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+      }
+    }
+
+    .image {
+      margin-top: -15px;
+      position: absolute;
+      right: -15px;
+    }
+  }
+
+}
+
+// Media Queries
+
+// Small Desktop
+
+@media (min-width: 991px) {
+  body.single-case-studies {
+    .article {
+      .content {
+        &.during {
+          .image {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile and Tablet
+
+
+@media (max-width: 991px) {
+
+  body.single-case-studies {
+    .article {
+      p {
+        margin-bottom: 30px;
+      }
+    }
+
+    .treatment {
+
+      .copy {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .image {
+        position: relative;
+        margin-top: 0;
+        right: 0;
+        margin-bottom: 40px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body.single-case-studies {
+
+    &.semi-permanent-eyeliner {
+      .banner {
+        background-position: -335px center;
+      }
+    }
+
+    &.semi-permanent-lip-liner {
+      .banner {
+        background-position: -10px center;
+      }
+    }
+    .treatment {
+      .copy {
+        h2 {
+          font-size: 60px;
+        }
+      }
+    }
+
+    .article {
+      text-align: center;
+
+      .content {
+        padding-top: 40px;
+        p {
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-bottom: 20px;
+        }
+        &.during {
+          text-align: center;
+          padding-left: 0;
+          padding-top: 70px;
+
+          .image {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+
+@media (max-width: 767px)  {
+  body.single-case-studies {
+    .banner {
+      padding-bottom: 40px;
+    }
+
+    &.semi-permanent-eyeliner {
+      .banner {
+        background-position: -374px;
+      }
+    }
+
+    &.semi-permanent-lip-liner {
+      .banner {
+        background-position: -415px center;
+      }
+    }
+
+    .article {
+      text-align: center;
+
+      h2 {
+        font-size: 35px;
+      }
+      .content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &.during {
+          text-align: center;
+          padding-left: 0;
+
+          .image {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

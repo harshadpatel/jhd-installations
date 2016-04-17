@@ -1,0 +1,176 @@
+body.home {
+
+  .feature-banner {
+
+    .item {
+      background: $color-feature-banner-bg url("../../dist/img/page-home/feature-banner/banner-one.jpg") no-repeat center center / cover;
+      height: 600px;
+    }
+
+    .copy {
+      background: url("../../dist/img/page-home/feature-banner/banner-bg.png") no-repeat center center / cover;
+      float: right;
+      position: relative;
+      text-align: center;
+      width: 570px;
+      height: 570px;
+      margin-top: 10px;
+      padding: 0 130px;
+      right: -85px;
+
+      h2 {
+        color: $color-feature-banner-heading;
+        margin-top: 185px;
+        font-size: 60px;
+        line-height: 60px;
+      }
+
+      p {
+        color: $color-feature-banner-copy;
+        font-size: 21px;
+      }
+    }
+  }
+
+  .product-items {
+
+    .item {
+
+      h3 {
+        background: url("../../dist/img/page-home/products/bg-hearts.png") no-repeat scroll center bottom transparent;
+        position: absolute;
+        width: 92%;
+        padding-bottom: 40px;
+      }
+
+      span {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: $color-product-items-span-hover url("../../dist/img/shared/case-studies/bg-hover-eyebrows.png") no-repeat scroll center;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &.eyebrows {
+          background: $color-product-items-span-hover url("../../dist/img/shared/case-studies/bg-hover-eyebrows.png") no-repeat scroll center;
+          background-size: 100%;
+        }
+
+        &.eyeliner {
+          background: $color-product-items-span-hover url("../../dist/img/shared/case-studies/bg-hover-eyeliner.png") no-repeat scroll center;
+          background-size: 100%;
+        }
+
+        &.lips {
+          background: $color-product-items-span-hover url("../../dist/img/shared/case-studies/bg-hover-lips.png") no-repeat scroll center;
+          background-size: 100%;
+        }
+      }
+
+      a {
+        &:hover {
+          span {
+            display: block;
+          }
+
+          .copy {
+            border: $color-product-items-span-hover 5px solid;
+          }
+        }
+      }
+    }
+
+    .copy {
+      margin-bottom: 100px;
+      position: relative;
+    }
+  }
+
+}
+
+
+// Media Queries
+
+// Small Desktop
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  body.home {
+    .feature-banner {
+      .copy {
+        right: 0;
+      }
+
+    }
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body.home {
+    .feature-banner {
+      .item {
+        height: 630px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .copy {
+        float: none;
+        margin: 0 auto;
+        padding-top: 190px;
+        right: 0;
+
+        h2 {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .product-items {
+      padding-bottom: 45px;
+    }
+  }
+}
+
+// Mobile
+
+@media (max-width: 767px) {
+  body.home {
+    .feature-banner {
+      .item {
+        padding: 30px 0;
+        height: 350px;
+      }
+    }
+    .feature-banner {
+
+      .copy {
+        background-position: top left;
+        float: none;
+        width: 290px;
+        margin: 0 auto;
+        padding: 75px;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        right: inherit;
+        height: 290px;
+
+        h2 {
+          font-size: 29px;
+          line-height: 1em;
+          margin-top: 0;
+        }
+
+        p {
+          color: #bab8bf;
+          font-size: 9px;
+        }
+      }
+    }
+
+    .product-items {
+      padding-bottom: 45px;
+    }
+  }
+}
