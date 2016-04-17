@@ -43,6 +43,8 @@
 
 }
 
+
+
 // Droid Serif
 
 @font-face {
@@ -61,7 +63,7 @@
 // Set base font
 
 body {
-  font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+  font-family: Raleway, "Times New Roman", "Bitstream Charter", Times, serif;
   color: $color-body;
 }
 
@@ -83,5 +85,10 @@ h1, .h1, h2, .h2 {
 
 @mixin opensans-bold {
   font-family: "Open Sans","Times New Roman",sans-serif;
+  font-weight: bold;
+}
+
+@mixin raleway-bold {
+  font-family: "Raleway","Times New Roman",sans-serif;
   font-weight: bold;
 }

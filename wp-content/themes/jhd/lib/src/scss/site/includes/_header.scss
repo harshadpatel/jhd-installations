@@ -1,355 +1,391 @@
-  header {
+    header {
 
-    .logo {
-      margin-bottom: 15px;
-      margin-left: 3px;
-      position: relative;
-      float: left;
-    }
-
-    .telephone-number {
-      @include opensans-bold;
-      color: $color-black;
-      float: left;
-      position: relative;
-    @media (max-width: 767px) { 
-      position: absolute;
-      right: 65px;
-      top: 3px;
-      z-index: 3;
-    }
-    @media (min-width: 768px) {
-        left: -6px;
-    }
-
-      a {
-          background: url("../../dist/img/header/icons/icon-telephone.png") no-repeat scroll 0px 8px;
-          display: block;
-          font-size: 28px;
-    @media (max-width: 767px) { 
-          text-indent: -10000px;
-          width: 26px;
-          height: 39px;
-                    display: block;
-                    overflow: hidden;
-    }
-    @media (min-width: 768px) {
-            margin-top: 50px;
-          padding-left: 47px;
-    }
-
-      }
-    }
-
-    .navigation {
-      background: $color-header-navigation;
-
-      a {
-        color: $color-white;
-        font-size: 16px;
-
-        &:hover, &:focus {
-          background: $color-global-green;
-          color: #42413f;
-        }
+      .logo {
+        margin-bottom: 26px;
+        margin-left: 3px;
+        position: relative;
+        float: left;
       }
 
-      .current-menu-item a:first-of-type {
-        background: $color-global-green;
-        color: #42413f;
-      }
-
-      .sub-menu {
-        display: none;
+      .telephone-number {
+        @include opensans-bold;
+        color: $color-black;
+        float: left;
+        position: relative;
+      @media (max-width: 767px) { 
         position: absolute;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        background: #42413f;
-        width: 100%;
-        z-index: 999999;
+        right: 65px;
+        top: 3px;
+        z-index: 3;
+      }
+      @media (min-width: 768px) {
+          left: -6px;
+      }
 
         a {
-          padding: 10px 0 10px 15px;
-          display: block;
-        }
-
-        a:hover {
-          text-decoration: none;
-        }
-      }
-
-    }
-
+            background: url("../../dist/img/header/icons/icon-telephone.png") no-repeat scroll 0px 8px;
+            display: block;
+            font-size: 28px;
       @media (max-width: 767px) { 
+            text-indent: -10000px;
+            width: 26px;
+            height: 39px;
+            display: block;
+            overflow: hidden;
+      }
+      @media (min-width: 768px) {
+              margin-top: 50px;
+            padding-left: 47px;
+      }
 
-      .header-left {
+        }
+      }
+
+      .navigation {
         position: relative;
-        z-index: 1;
+        background: $color-header-navigation url("../../dist/img/navigation/bg-navigation.gif") no-repeat scroll;
+        background-size: contain;
+
+        li {
+          margin-right: 36px;
+          position: relative;
+
+          &:after {
+            background: $color-border-grey;
+            content: "";
+            height: 19px;
+            position: absolute;
+            right: -18px;
+            top: 42%;
+            width: 2px;
+          }
+
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+        }
+
+        a {
+          color: $color-white;
+          font-size: 20px;
+          border-bottom: 19px transparent solid;
+          padding: 42px 0 23px;
+          text-transform: uppercase;
+          font-weight: bold;
+
+          &:hover, &:focus {
+            background: transparent;
+            border-bottom: 19px $color-navigation-border solid;
+            color: #fff;
+          }
+        }
+
+        .current-menu-item a:first-of-type {
+           border-bottom: 19px $color-navigation-border solid;
+          color: #fff;
+        }
+
+        .sub-menu {
+          display: none;
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          background: #42413f;
+          width: 100%;
+          z-index: 999999;
+
+          a {
+            padding: 10px 0 10px 15px;
+            display: block;
+          }
+
+          a:hover {
+            text-decoration: none;
+          }
+        }
+
+        &:after {
+          background: $color-bottom-orange url("../../dist/img/navigation/bg-navigation-bottom.gif") no-repeat center top;
+          bottom: -7px;
+          content: "";
+          display: block;
+          height: 7px;
+          left: 0;
+          position: absolute;
+          width: 100%;
+        }
+
       }
 
-    .header-right {
-      position: absolute;
-      top: 0;
-    }
-    }
+        @media (max-width: 767px) { 
 
-
-    .cta {
-      @include reset-list-reset;
-      float: right;
-      list-style: outside none none;
-      margin: 55px -2px 0 0;
-      position: relative;
-      z-index: 2;
-          @media (min-width: 768px) {     
-      margin: 49px -2px 0 0;
-      }
-      padding: 0;
-
-      a {
-        font-size: 16px;
-        padding: 8px 10px;
-        @media (min-width: 768px) {      
-          font-size: 24px;
+        .header-left {
+          position: relative;
+          z-index: 1;
         }
-        @media (min-width: 992px) {      
-          font-size: 24px;
-        }
-        @media (min-width: 1200px) {
-          padding: 16px 46px;
-        }
-      }
-    }
-  }
 
-  // Media Queries
-
-  // Mobile and Tablet
-
-  @media (max-width: 991px) {
-    header {
-      .navbar-toggle {
-        border: 0;
+      .header-right {
         position: absolute;
-        right: 0;
         top: 0;
+      }
+      }
 
-        .icon-bar {
-          background-color: #000;
+
+      .cta {
+        @include reset-list-reset;
+        float: right;
+        list-style: outside none none;
+        margin: 55px -2px 0 0;
+        position: relative;
+        z-index: 2;
+            @media (min-width: 768px) {     
+        margin: 49px -2px 0 0;
         }
-      }
+        padding: 0;
 
-      .sub-menu {
-
-        display: none;
-      }
-
-      .navigation .menu-item-has-children:hover .sub-menu {
-        display: none!important;
-      }
-    }
-  }
-
-  // Small Desktop
-
-  @media (min-width: 992px) and (max-width: 1169px) {
-    header {
-      .logo {
-        margin-left: 0;
-      }
-    }
-  }
-
-  // Small Desktop onwards
-
-  @media (min-width: 992px) {
-    header {
-      .navigation {
-        height: auto!important;
-
-        &.collapse {
-          display: block;
-        }
-
-        .menu-item-has-children:hover .sub-menu {
-          display: block;
+        a {
+          font-size: 16px;
+          padding: 8px 10px;
+          @media (min-width: 992px) {      
+            font-size: 24px;
+          }
+          @media (min-width: 1200px) {
+            padding: 16px 46px;
+          }
         }
       }
     }
-  }
 
-  // Tablet
+    // Media Queries
 
-  @media (min-width: 768px) and (max-width: 991px) {
-    header {
-      .logo {
-        text-align: center;
-        float: none;
-        margin-left: 0;
+    // Mobile and Tablet
 
-      }
+    @media (max-width: 991px) {
+      header {
+        .navbar-toggle {
+          border: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
 
-      .navigation {
-        height: auto!important;
-
-        &.collapse {
-          display: block;
-        }
-
-        li {
-          a {
-            font-size: 12px;
-            padding: 10px 12px;
-          }
-        }
-      }
-
-      .social {
-
-        display: table;
-        float: none;
-        margin: 30px auto 15px;
-        li {
-          margin-right: 15px;
-          a {
-            background-size: 253px;
-            width: 35px;
-            height: 35px;
-          }
-
-          &.facebook {
-            a {
-              background-position: -56px 0;
-
-              &:hover {
-                background-position: -56px -41px;
-              }
-            }
-          }
-
-          &.twitter {
-            a {
-              background-position: 0 0;
-
-              &:hover {
-                background-position: 0 -41px;
-              }
-            }
-          }
-
-          &.google {
-            a {
-              background-position: -111px 0;
-
-              &:hover {
-                background-position: -111px -41px;
-              }
-            }
-          }
-
-          &.youtube {
-            a {
-              background-position: -165px 0;
-
-              &:hover {
-                background-position: -165px -41px;
-              }
-            }
-          }
-
-          &.instagram {
-            a {
-              background-position: -471px 0;
-
-              &:hover {
-                background-position: -471px -41px;
-              }
-            }
+          .icon-bar {
+            background-color: #000;
           }
         }
 
+        .sub-menu {
+
+          display: none;
+        }
+
+        .navigation .menu-item-has-children:hover .sub-menu {
+          display: none!important;
+        }
       }
     }
-  }
 
-  // Mobile
+    // Small Desktop
 
-  @media (max-width: 767px) {
-    header {
-      .logo {
-        margin-left: 0;
-        margin-top: 15px;
-
-        img {
-          width: 60%;
+    @media (min-width: 992px) and (max-width: 1169px) {
+      header {
+        .logo {
           margin-left: 0;
         }
       }
+    }
 
-      .social {
+    // Small Desktop onwards
 
-        float: none;
-        margin: 0 auto;
-        margin-bottom: 15px;
-        display: table;
-        li {
-          margin-right: 15px;
-          a {
-            background-size: 253px;
-            width: 35px;
-            height: 35px;
+    @media (min-width: 992px) {
+      header {
+        .navigation {
+          height: auto!important;
+
+          &.collapse {
+            display: block;
           }
 
-          &.facebook {
-            a {
-              background-position: -56px 0;
+          .menu-item-has-children:hover .sub-menu {
+            display: block;
+          }
+        }
+      }
+    }
 
-              &:hover {
-                background-position: -56px -41px;
+    // Tablet
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      header {
+        .logo {
+          text-align: center;
+          float: none;
+          margin-left: 0;
+
+        }
+
+        .navigation {
+          height: auto!important;
+
+          &.collapse {
+            display: block;
+          }
+
+          li {
+            a {
+              font-size: 12px;
+              padding: 10px 12px;
+            }
+          }
+        }
+
+        .social {
+
+          display: table;
+          float: none;
+          margin: 30px auto 15px;
+          li {
+            margin-right: 15px;
+            a {
+              background-size: 253px;
+              width: 35px;
+              height: 35px;
+            }
+
+            &.facebook {
+              a {
+                background-position: -56px 0;
+
+                &:hover {
+                  background-position: -56px -41px;
+                }
+              }
+            }
+
+            &.twitter {
+              a {
+                background-position: 0 0;
+
+                &:hover {
+                  background-position: 0 -41px;
+                }
+              }
+            }
+
+            &.google {
+              a {
+                background-position: -111px 0;
+
+                &:hover {
+                  background-position: -111px -41px;
+                }
+              }
+            }
+
+            &.youtube {
+              a {
+                background-position: -165px 0;
+
+                &:hover {
+                  background-position: -165px -41px;
+                }
+              }
+            }
+
+            &.instagram {
+              a {
+                background-position: -471px 0;
+
+                &:hover {
+                  background-position: -471px -41px;
+                }
               }
             }
           }
 
-          &.twitter {
-            a {
-              background-position: 0 0;
+        }
+      }
+    }
 
-              &:hover {
-                background-position: 0 -41px;
+    // Mobile
+
+    @media (max-width: 767px) {
+      header {
+        .logo {
+          margin-left: 0;
+          margin-top: 15px;
+
+          img {
+            width: 60%;
+            margin-left: 0;
+          }
+        }
+
+        .social {
+
+          float: none;
+          margin: 0 auto;
+          margin-bottom: 15px;
+          display: table;
+          li {
+            margin-right: 15px;
+            a {
+              background-size: 253px;
+              width: 35px;
+              height: 35px;
+            }
+
+            &.facebook {
+              a {
+                background-position: -56px 0;
+
+                &:hover {
+                  background-position: -56px -41px;
+                }
               }
             }
-          }
 
-          &.google {
-            a {
-              background-position: -111px 0;
+            &.twitter {
+              a {
+                background-position: 0 0;
 
-              &:hover {
-                background-position: -111px -41px;
+                &:hover {
+                  background-position: 0 -41px;
+                }
               }
             }
-          }
 
-          &.youtube {
-            a {
-              background-position: -165px 0;
+            &.google {
+              a {
+                background-position: -111px 0;
 
-              &:hover {
-                background-position: -165px -41px;
+                &:hover {
+                  background-position: -111px -41px;
+                }
               }
             }
-          }
-          &.instagram {
-            a {
-              background-position: -471px 0;
 
-              &:hover {
-                background-position: -471px -41px;
+            &.youtube {
+              a {
+                background-position: -165px 0;
+
+                &:hover {
+                  background-position: -165px -41px;
+                }
+              }
+            }
+            &.instagram {
+              a {
+                background-position: -471px 0;
+
+                &:hover {
+                  background-position: -471px -41px;
+                }
               }
             }
           }
         }
       }
     }
-  }

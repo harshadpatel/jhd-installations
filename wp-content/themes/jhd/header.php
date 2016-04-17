@@ -16,6 +16,7 @@
 
     <!-- stylesheets -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/lib/dist/css/bootstrap/bootstrap.css" />
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/lib/dist/css/main.css" />
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/lib/dist/js/fancybox/jquery.fancybox.css" />
