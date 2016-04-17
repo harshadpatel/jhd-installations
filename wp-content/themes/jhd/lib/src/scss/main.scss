@@ -8,8 +8,8 @@
 @import "utilities/helpers";
 
 /* Shared Elements */
-@import "shared/buttons";
 @import "shared/colours";
+@import "shared/buttons";
 @import "shared/forms";
 @import "shared/typography";
 @import "shared/common";
@@ -36,3 +36,7 @@
 @import "site/page/portfolio";
 @import "site/page/prices";
 @import "site/page/blog";
+
+/*body {
+	background: url("../../dist/img/tempbg.jpg");
+}*/

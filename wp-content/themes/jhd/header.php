@@ -15,6 +15,7 @@
     <?php wp_head(); ?>
 
     <!-- stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/lib/dist/css/bootstrap/bootstrap.css" />
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/lib/dist/css/main.css" />
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/lib/dist/js/fancybox/jquery.fancybox.css" />
@@ -41,7 +42,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="col-xs-12 col-sm-3 col-md-6 header-left">
 
                 <div class="logo">
                     <a href="/"><img src="<?php echo get_bloginfo('template_directory'); ?>/lib/dist/img/logo.png" /></a>
@@ -56,16 +57,14 @@
 
                 </div>
 
-            <div class="col-xs-12 col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-6">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-7 col-md-offset-0 col-md-6 header-right">
 
-
-                    <ul class="social">
-                        <li class="twitter"><a href="https://twitter.com/miriamgrice" target="_blank">Twitter</a></li>
-                        <li class="facebook"><a href="https://www.facebook.com/EliteSemiPermanentMakeup" target="_blank">Facebook</a></li>
-                        <?php /* <li class="google"><a href="https://plus.google.com/109626452389979863026/posts">Google+</a></li>
-                            <li class="youtube"><a href="#">YouTube</a></li> */ ?>
-                        <li class="instagram"><a href="http://instagram.com/miriamgrice/">Instagram</a></li>
-                    </ul>
+                    <div class="telephone-number">
+                        <a href="tel:07478 279 301">07478 279 301</a>
+                    </div>
+                    <div class="cta">
+                        <a href="#" class="btn-red">Get a free quote</a>
+                    </div>
 
             </div>
         </div>

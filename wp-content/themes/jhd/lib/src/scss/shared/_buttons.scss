@@ -27,3 +27,19 @@
   }
 }
 
+.btn-red {
+  background: $color-red;
+  color: $color-white;
+  font-family: "Open Sans", Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 25px;
+  text-align: center;
+  @include border-radius(0);
+
+  &:hover, &:focus {
+    background: $color-red-hover;
+    color: #fff;
+    text-decoration: none;
+  }
+}
