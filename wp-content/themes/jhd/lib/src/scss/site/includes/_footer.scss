@@ -1,23 +1,43 @@
 footer {
 
-  background: url("../../dist/img/footer/bg-footer.png") no-repeat right top $color-footer-bg;
-  background-size: cover;
+  background: url("../../dist/img/footer/footer.jpg") no-repeat center top $color-footer-bg;
   color: $color-white;
   font-family: open_sansregular, Arial, Helvetica;
-  padding-top: 50px;
+  padding-top: 58px;
+  background-size: auto;
+  padding-bottom: 123px;
 
   h3 {
-    border-bottom: 1px solid $color-footer-top-heading-border;
-    color: $color-footer-top-heading;
-    font-family: ralewaymedium, open_sansregular, Arial, Helvetica;
-    font-size: 30px;
+    border-bottom: 3px solid $color-red;
+    color: $color-red;
+    @include raleway-bold;
+    font-size: 34px;
     line-height: 0.7em;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+    &.first-heading {
+          width: 91%;
+    }
+  }
+
+  p {
+  font-size: 28px;
+  line-height: 59px;
+  }
+
+  .col-md-4 + .col-md-4 {
+      padding-left: 44px;
+  }
+
+  .menu {
+  margin-top: 58px;
   }
 
   a {
     color: $color-white;
+    font-size: 28px;
 
     &:hover {
       color: $color-white;
@@ -36,7 +56,7 @@ footer {
   .menu {
     .navbar-nav > li {
       float: none;
-      padding-bottom: 10px;
+      padding-bottom: 35px;
 
       a {
         display: inline;
@@ -52,16 +72,25 @@ footer {
 
   .gravity-form {
 
+  margin-top: 50px;
+
+  label {
+  font-size: 28px;
+  margin-bottom: 18px!important;
+  }
+
     .gform_wrapper {
       ul {
         &.gform_fields {
 
 
           li {
-
+              width: 100%;
             input, textarea {
               background: $color-footer-input-textarea;
-              border: $color-footer-input-textarea-border 1px solid;
+              width: 100%;
+              color: #333;
+              border: 0;
             }
           }
         }

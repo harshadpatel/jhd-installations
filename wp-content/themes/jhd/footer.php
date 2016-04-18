@@ -3,21 +3,17 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-4">
 
-                    <h3>Get in Touch</h3>
-                    <div class="address-top">
-                    <p>579 Selby Road<br>
-                    Leeds<br>
-                    LS15 8PX</p>
-                        </div>
-                    <div class="address-bottom">
-                    <p><span>Phone:</span> 07714197772<br>
-                    <span>Email:</span> <a href="mailto:mimgrice@gmail.com">mimgrice@gmail.com</a></p>
+                    <h3 class="first-heading">Get in Touch</h3>
+                    <div class="address">
+                    <p>07478 279 301<br>
+                    <a href="mailto:jhginstallations@gmail.com</a></p>
+                        </div>">jhginstallations@gmail.com</a></p>
                         </div>
 
                 </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-4">
 
                     <h3>Links</h3>
                     <div class="menu">
@@ -32,7 +28,7 @@
                     </div>
 
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-4">
 
                     <h3>Contact us</h3>
                     <div class="gravity-form">
@@ -44,29 +40,7 @@
     </div>
     <!-- footer-top -->
 
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="footer-social">
-                        <ul class="social">
-                            <li class="twitter"><a href="https://twitter.com/miriamgrice">Twitter</a></li>
-                            <li class="facebook"><a href="https://www.facebook.com/EliteSemiPermanentMakeup">Facebook</a></li>
-                            <?php /* <li class="google"><a href="https://plus.google.com/109626452389979863026/posts">Google+</a></li>
-                            <li class="youtube"><a href="#">YouTube</a></li> */ ?>
-                        <li class="instagram"><a href="http://instagram.com/miriamgrice/">Instagram</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-8">
-                    <div class="footer-copyright">
-                    <p>Copyright 2014 Miriam Grice. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- footer-bottom -->
+
 
     <?php wp_footer(); ?>
 

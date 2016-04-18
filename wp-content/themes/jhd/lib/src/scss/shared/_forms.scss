@@ -9,7 +9,7 @@
 
         li {
           width: 50%;
-          margin-bottom: 10px;
+          margin-bottom: 17px;
           float: left;
           min-height: 1px;
           position: relative;
@@ -20,22 +20,14 @@
             }
           }
 
-          &#field_1_4 {
-            position: absolute;
-            right: 0;
-          }
-
           input, textarea {
             font-family: open_sansregular, Arial, Helvetica;
-            background: $color-form-bg-input-textarea;
-            border: $color-form-border 1px solid;
-            @include border-radius(10px);
-            width: 96%;
-            padding: 12px 15px;
+            background: $color-white;
+            padding: 19px 15px;
           }
 
           textarea {
-            height: 145px;
+            height: 201px;
           }
         }
       }
