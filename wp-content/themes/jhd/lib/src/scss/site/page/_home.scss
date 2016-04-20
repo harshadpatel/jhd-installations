@@ -4,25 +4,18 @@ body.home {
 
     .item {
       background: $color-feature-banner-bg url("../../dist/img/page-home/feature-banner/banner-one.jpg") no-repeat center center / cover;
-      height: 600px;
+      height: 500px;
     }
 
     .copy {
-      background: url("../../dist/img/page-home/feature-banner/banner-bg.png") no-repeat center center / cover;
-      float: right;
-      position: relative;
-      text-align: center;
-      width: 570px;
-      height: 570px;
-      margin-top: 10px;
-      padding: 0 130px;
-      right: -85px;
 
       h2 {
-        color: $color-feature-banner-heading;
+        color: $color-white;
+        @include raleway-bold;
         margin-top: 185px;
         font-size: 60px;
         line-height: 60px;
+        text-transform: none;
       }
 
       p {
