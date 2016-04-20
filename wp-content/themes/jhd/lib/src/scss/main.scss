@@ -10,8 +10,8 @@
 /* Shared Elements */
 @import "shared/colours";
 @import "shared/buttons";
-@import "shared/forms";
 @import "shared/typography";
+@import "shared/forms";
 @import "shared/common";
 
 /* Site Elements */
@@ -37,6 +37,6 @@
 @import "site/page/prices";
 @import "site/page/blog";
 
-/*body {
+body {
 	background: url("../../dist/img/tempbg.jpg");
-}*/
+}
