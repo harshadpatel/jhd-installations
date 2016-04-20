@@ -17,8 +17,12 @@ footer {
     margin-bottom: 40px;
     text-transform: uppercase;
 
+    @media(min-width: 992px) {
+
     &.first-heading {
           width: 91%;
+    }
+
     }
   }
 
@@ -27,8 +31,12 @@ footer {
   line-height: 59px;
   }
 
+  @media(min-width: 992px) {
+
   .col-md-4 + .col-md-4 {
       padding-left: 44px;
+  }
+
   }
 
   .menu {
