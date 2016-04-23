@@ -78,12 +78,13 @@ body {
   color: $color-body;
 }
 
-// Set Headings to League Gothic
+// Set Headings to Raleway
 
 h1, .h1, h2, .h2 {
   font-family: Raleway, "Times New Roman", "Bitstream Charter", Times, serif;
   text-transform: uppercase;
   font-weight: bold;
+  position: relative;
 }
 
 // Emphasise font

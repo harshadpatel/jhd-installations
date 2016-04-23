@@ -41,7 +41,7 @@
     </div> */?>
 
 
-    <div class="about">
+    <div class="whoweare">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 center-col-block copy">
@@ -51,6 +51,20 @@
                     <div class="bottom-cta">
                         <a href="/about-me/" class="btn-red triangle-orig">Find out more</a>
                     </div>
+                </div>
+                <?php /*<div class="col-xs-12 col-sm-4 image">
+                    <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/page-home/about/miriam.jpg" class="img-responsive-full">
+                </div>*/?>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatwedo">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 center-col-block copy">
+                    <h2><?php the_field('whatwedo_title'); ?></h2>
+                    <?php the_field('whatwedo_copy'); ?>
                 </div>
                 <?php /*<div class="col-xs-12 col-sm-4 image">
                     <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/page-home/about/miriam.jpg" class="img-responsive-full">
