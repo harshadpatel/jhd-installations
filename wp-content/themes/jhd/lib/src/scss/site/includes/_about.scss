@@ -1,24 +1,35 @@
 .about{
   background: $color-about-bg;
-  padding: 50px 0;
+  padding: 63px 0;
 
   .content {
     margin-top: 90px;
     overflow: hidden;
   }
 
+  .copy {
+    text-align: center;
+  }
+
   h2 {
     color: $color-global-green;
-    font-size: 60px;
+    font-size: 34px;
+    padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 5px solid $color-global-green;
+    display: inline-block;
+    margin-bottom: 42px;
   }
 
   p {
-    font-family: open_sansregular, Arial, Helvetica;
-    margin-bottom: 30px;
-    line-height: 24px;
+      font-size: 26px;
+      line-height: 52px;
+      margin-bottom: 30px;
+      text-align: center;
   }
 
   .bottom-cta {
+  margin-top: 60px;
     .btn {
       margin-right: 45px;
     }

@@ -30,12 +30,32 @@
 .btn-red {
   background: $color-red;
   color: $color-white;
-  font-family: "Open Sans", Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
   font-weight: bold;
-  font-size: 18px;
-  padding: 15px 25px;
+  font-size: 24px;
+  padding: 14px 30px;
+  padding-right: 18px;
   text-align: center;
   @include border-radius(0);
+  position: relative;
+
+       &.triangle-orig {
+          width: 0;
+          height: 0;
+          overflow: hidden;
+
+        &:before{
+            border-bottom: 57px solid transparent;
+            border-left: 30px solid $color-red;
+            content: "";
+            display: block;
+            height: 0;
+            position: absolute;
+            right: -30px;
+            top: 0;
+            width: 0;
+            z-index:2;
+        }
+      } 
 
   &.with-border {
     border: 7px solid rgba(255, 0, 0, .3);
@@ -44,7 +64,6 @@
     @include border-radius(15px);
     @include border-bottom-right-radius(0);
     @include border-top-right-radius(0);
-    position: relative;
     border-right: 0;
 
 
@@ -103,5 +122,14 @@
       }
 
       }
+
+      &.triangle-orig {
+        &:before{
+            border-left: 30px solid $color-red-hover;
+        }
+
+      }
+
+
   }
 }

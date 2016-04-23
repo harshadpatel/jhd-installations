@@ -60,6 +60,17 @@
 
 }
 
+
+@mixin opensans-bold {
+  font-family: "Open Sans","Times New Roman",sans-serif;
+  font-weight: bold;
+}
+
+@mixin raleway-bold {
+  font-family: "Raleway","Times New Roman",sans-serif;
+  font-weight: bold;
+}
+
 // Set base font
 
 body {
@@ -70,8 +81,9 @@ body {
 // Set Headings to League Gothic
 
 h1, .h1, h2, .h2 {
-  font-family: 'league_gothicregular', 'Impact', "Times New Roman", sans-serif;
+  font-family: Raleway, "Times New Roman", "Bitstream Charter", Times, serif;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 // Emphasise font
@@ -81,14 +93,4 @@ h1, .h1, h2, .h2 {
   font-style: italic;
   font-size: 24px;
   line-height: 1.2em!important;
-}
-
-@mixin opensans-bold {
-  font-family: "Open Sans","Times New Roman",sans-serif;
-  font-weight: bold;
-}
-
-@mixin raleway-bold {
-  font-family: "Raleway","Times New Roman",sans-serif;
-  font-weight: bold;
 }

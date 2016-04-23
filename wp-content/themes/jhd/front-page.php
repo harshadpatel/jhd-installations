@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <div class="product-items">
+    <?php /*<div class="product-items">
         <div class="container">
             <div class="row">
 
@@ -38,23 +38,23 @@
 
             </div>
         </div>
-    </div>
+    </div> */?>
 
 
     <div class="about">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-8 copy">
+                <div class="col-xs-12 col-sm-12 center-col-block copy">
                     <h2><?php the_field('about_title'); ?></h2>
                     <?php the_field('about_copy'); ?>
 
                     <div class="bottom-cta">
-                        <a href="/about-me/" class="btn btn-cta-light-green">Read more about Miriam ></a>
+                        <a href="/about-me/" class="btn-red triangle-orig">Find out more</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 image">
+                <?php /*<div class="col-xs-12 col-sm-4 image">
                     <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/page-home/about/miriam.jpg" class="img-responsive-full">
-                </div>
+                </div>*/?>
             </div>
         </div>
     </div>
