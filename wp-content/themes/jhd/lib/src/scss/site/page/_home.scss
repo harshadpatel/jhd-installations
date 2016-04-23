@@ -12,15 +12,22 @@ body.home {
       h2 {
         color: $color-white;
         @include raleway-bold;
-        margin-top: 185px;
-        font-size: 60px;
-        line-height: 60px;
+        margin-top: 125px;
+        margin-bottom: 80px;
+        font-size: 50px;
+        line-height: 70px;
+        padding-right: 240px;
         text-transform: none;
       }
 
       p {
         color: $color-feature-banner-copy;
         font-size: 21px;
+      }
+
+      .btn-red {
+          padding: 20px 37px;
+          font-size: 24px;
       }
     }
   }

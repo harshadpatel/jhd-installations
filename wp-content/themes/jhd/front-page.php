@@ -7,6 +7,7 @@
             <div class="container">
                 <div class="copy">
                     <?php the_field('banner_copy'); ?>
+                    <a href="#" class="btn-red with-border triangle-up-left">Get a free quote</a>
                 </div>
             </div>
         </div>
