@@ -76,14 +76,15 @@
     <div class="recent-work">
         <div class="container">
 
-            <h2><span>Recent Work</span></h2>
+            <h2><span>Case Studies</span></h2>
+            <p>Browse examples of our premium signage work with some of the biggest brands in the world and get in touch if you want to add your brand here.</p>
             <div class="row">
                 <ul class="recent-work-gallery">
 
                     <?php if(get_field('recent_work')) : ?>
                         <?php while(has_sub_field('recent_work')) : ?>
 
-                            <li class="col-xs-6 col-md-3">
+                            <li class="col-xs-6 col-md-4">
                                 <a class="fancybox" href="<?php the_sub_field('image_large'); ?>">
                                     <img src="<?php the_sub_field('image_thumb'); ?>" class="img-responsive-full" />
                                     <span></span>
@@ -100,7 +101,7 @@
 
     <?php get_template_part('partials/quotes'); ?>
 
-    <div class="clients">
+    <?php /*<div class="clients">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-7">
@@ -123,7 +124,29 @@
         </div>
     </div>
 
-    <?php get_template_part('partials/contact'); ?>
+    <?php get_template_part('partials/contact'); ?>*/ ?>
+
+    <div class="accreditions">
+<div class="row">
+        <div class="container">
+            <hr>
+            <div class="logos">
+            <div class="col-xs-12 col-sm-3">
+                 <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/shared/accreditions/pasma.jpg" class="img-responsive center-block">   
+            </div>
+                        <div class="col-xs-12 col-sm-3">
+                 <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/shared/accreditions/ipaf.jpg" class="img-responsive center-block">   
+            </div>
+                        <div class="col-xs-12 col-sm-3">
+                 <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/shared/accreditions/cscs.jpg" class="img-responsive center-block">   
+            </div>
+                        <div class="col-xs-12 col-sm-3">
+                 <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/shared/accreditions/constructionskills.jpg" class="img-responsive center-block">   
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
 
 
 </div>

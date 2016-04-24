@@ -6,26 +6,26 @@
                 <div class="quote">
                     <div class="copy">
                         <blockquote>
-                            I have put off having my eyebrows done for years because I was too scared, but now they are done I LOVE them! I’ve got the eyebrows I always wanted, I can throw the pencil in the bin now! I wish I hadn’t put it off for so long. Definitely recommend it
+                            Welcome to JHG Installations. We are a very reputable and established sign installation company with many years of 
                         </blockquote>
                             <span class="name">
-                                Janet P. - Leeds
+                                Mr J Smith - Shell
                             </span>
                     </div>
                     <div class="copy">
                         <blockquote>
-                            Very friendly salon greeted with smiles n a hot drink very clean. Love my new brows defo have the wow factor I wanted. Miriam knew exactly what I wanted defo recommend her to my friends and clients thankyou Miriam x
+                            Welcome to JHG Installations. We are a very reputable and established sign installation company with many years of 
                         </blockquote>
                         <span class="name">
-                            Bal Hairdresser
+                            Mr J Smith - Shell
                         </span>
                     </div>
                     <div class="copy">
                         <blockquote>
-                            Miriam, thank you so much for my perfect eyebrows! I’ve just been staring at them since I got home!! Even my husband commented on then saying how good they looked. Can’t wait to get my full face of make up on with my eyelashes on sat night to show them off!!
+                            MWelcome to JHG Installations. We are a very reputable and established sign installation company with many years of 
                         </blockquote>
                         <span class="name">
-                            Katie Nicolaou
+                            Mr J Smith - Shell
                         </span>
                     </div>
                 </div>
