@@ -1,0 +1,73 @@
+.recent-work {
+  padding-top: 78px;
+  padding-bottom: 105px;
+  text-align: center;
+
+
+  p {
+      font-size: 26px;
+      line-height: 52px;
+      margin-bottom: 22px;
+      text-align: center;
+  }
+
+  h2 {
+    color: $color-global-green;
+    font-size: 34px;
+    padding-bottom: 19px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 38px;
+
+    &:before {
+      background: $color-global-green;
+      position: absolute;
+      height: 5px;
+      width: 90%;
+      content: "";
+      bottom: -5px;
+      left: 5%;
+    }
+  }
+
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .recent-work-gallery {
+    @include reset-list-reset;
+    overflow: hidden;
+    margin-top: 30px;
+      li {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 10px;
+
+        a {
+          display:block;
+
+          span {
+            background: url("../../dist/img/shared/recent-work/recent-work-hover.png") no-repeat center center transparent;
+            background-size: cover;
+            display: block;
+            position: absolute;
+            width: 96%;
+            height: 100%;
+            top: 0;
+            opacity: 0;
+            @include transition-property(opacity);
+            @include transition-duration(0.2s);
+          }
+
+          &:hover {
+            span {
+              opacity: 1;
+            }
+          }
+
+        }
+
+      }
+  }
+}

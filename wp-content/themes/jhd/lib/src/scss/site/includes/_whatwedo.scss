@@ -1,0 +1,150 @@
+.whatwedo{
+  background: $color-whatwedo-bg;
+  padding: 70px 0;
+  padding-bottom: 115px;
+
+  .content {
+    margin-top: 90px;
+    overflow: hidden;
+  }
+
+  .copy {
+    text-align: center;
+  }
+
+  h2 {
+    color: $color-global-green;
+    font-size: 34px;
+    padding-bottom: 19px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 68px;
+
+    &:before {
+      background: $color-global-green;
+      position: absolute;
+      height: 5px;
+      width: 90%;
+      content: "";
+      bottom: -5px;
+      left: 5%;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  li {
+      width: 50%;
+      float: left;
+      text-align: left;
+      list-style: none;
+      padding-left: 50px;
+      padding-top: 35px;
+      padding-bottom: 16px;
+      font-size:20px;
+      font-weight: bold;
+      border-bottom: $color-li-border 1px solid;
+              background: url("../../dist/img/page-home/whoweare/bg_bullet.jpg") no-repeat scroll 2% 58% transparent;
+
+      &:nth-child(even) {
+       margin-left: 27px;
+        width: 47.6%;
+      }
+      &:nth-child(1), &:nth-child(2) {
+      border-top: $color-li-border 1px solid;
+      }
+      }
+  }
+
+}
+
+
+// Media Queries
+
+// Small Desktop
+
+@media (min-width: 992px) {
+  .about {
+    .bottom-cta {
+      .professional-bodies {
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about {
+
+    .content {
+      margin-top: 40px;
+    }
+
+    .image {
+      margin-top: 30px;
+    }
+
+    .bottom-cta {
+
+      .professional-bodies {
+        bottom: 0;
+        display: block;
+        margin-top: 30px;
+        position: absolute;
+        right: -235px;
+
+      }
+
+    }
+  }
+}
+
+// Tablet
+
+@media (max-width: 767px) {
+
+  .about {
+
+    .content {
+      margin-top: 40px;
+    }
+
+    .image {
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 50px;
+      margin-top: 0;
+    }
+
+    .copy {
+      text-align: center;
+    }
+
+    .bottom-cta {
+      .professional-bodies {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: block;
+
+        img {
+          width: 130px;
+        }
+
+      }
+
+      .btn {
+        display: table;
+        margin: 0 auto;
+      }
+    }
+  }
+}
