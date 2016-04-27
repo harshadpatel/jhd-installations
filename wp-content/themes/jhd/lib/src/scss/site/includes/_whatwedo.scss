@@ -1,7 +1,10 @@
 .whatwedo{
   background: $color-whatwedo-bg;
+  padding: 30px 0;
+  @media (min-width: 768px) {
   padding: 70px 0;
   padding-bottom: 115px;
+  }
 
   .content {
     margin-top: 90px;
@@ -18,7 +21,9 @@
     padding-bottom: 19px;
     text-align: center;
     display: inline-block;
+      @media (min-width: 768px) {
     margin-bottom: 68px;
+    }
 
     &:before {
       background: $color-global-green;
@@ -36,8 +41,10 @@
     padding: 0;
     overflow: hidden;
   li {
+  @media (min-width: 768px) {
       width: 50%;
       float: left;
+      }
       text-align: left;
       list-style: none;
       padding-left: 50px;
@@ -47,13 +54,24 @@
       font-weight: bold;
       border-bottom: $color-li-border 1px solid;
               background: url("../../dist/img/page-home/whoweare/bg_bullet.jpg") no-repeat scroll 2% 58% transparent;
+  @media (min-width: 768px) {
+      &:nth-child(even) {
+       margin-left: 27px;
+        width: 45.6%;
+      }
+      &:nth-child(1), &:nth-child(2) {
+      border-top: $color-li-border 1px solid;
+      }
+      }
 
+        @media (min-width: 992px) {
       &:nth-child(even) {
        margin-left: 27px;
         width: 47.6%;
       }
       &:nth-child(1), &:nth-child(2) {
       border-top: $color-li-border 1px solid;
+      }
       }
       }
   }

@@ -4,7 +4,12 @@ body.home {
 
     .item {
       background: $color-feature-banner-bg url("../../dist/img/page-home/feature-banner/banner-one.jpg") no-repeat center center / cover;
-      height: 500px;
+      @media (min-width: 768px) {
+height: 430px;
+      }
+      @media (min-width: 992px) {
+height: 500px;
+      }
     }
 
     .copy {
@@ -16,7 +21,9 @@ body.home {
         margin-bottom: 80px;
         font-size: 50px;
         line-height: 70px;
-        padding-right: 240px;
+        @media (min-width: 992px) {
+          padding-right: 240px;
+        }
         text-transform: none;
       }
 
@@ -26,7 +33,10 @@ body.home {
       }
 
       .btn-red {
-          padding: 20px 37px;
+      padding: 10px 20px;
+            @media (min-width: 768px) {
+padding: 20px 37px;
+      }
           font-size: 24px;
             font-family: "Open Sans", Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
       }
@@ -112,14 +122,12 @@ body.home {
   body.home {
     .feature-banner {
       .item {
-        height: 630px;
         padding-top: 30px;
         padding-bottom: 30px;
       }
       .copy {
         float: none;
         margin: 0 auto;
-        padding-top: 190px;
         right: 0;
 
         h2 {
@@ -141,7 +149,7 @@ body.home {
     .feature-banner {
       .item {
         padding: 30px 0;
-        height: 350px;
+        height: 280px;
       }
     }
     .feature-banner {
@@ -149,13 +157,8 @@ body.home {
       .copy {
         background-position: top left;
         float: none;
-        width: 290px;
-        margin: 0 auto;
-        padding: 75px;
-        padding-top: 100px;
-        padding-bottom: 60px;
         right: inherit;
-        height: 290px;
+        text-align: center;
 
         h2 {
           font-size: 29px;

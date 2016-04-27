@@ -75,24 +75,36 @@
           overflow: hidden;
 
         &:after {
+                    border-bottom: 70px solid transparent;
+            border-left: 46px solid rgba(255, 0, 0, .3);
+            right: -46px;
+        @media (min-width: 768px) {
             border-bottom: 89px solid transparent;
             border-left: 62px solid rgba(255, 0, 0, .3);
+            right: -62px;
+        }
             content: "";
             display: block;
             height: 0;
             position: absolute;
-            right: -62px;
             top: -7px;
             width: 0;
         }
         &:before{
+
+            border-bottom: 54px solid transparent;
+            border-left: 35px solid $color-red;
+                        right: -35px;
+        @media (min-width: 768px) {
+
             border-bottom: 73px solid transparent;
             border-left: 50px solid $color-red;
+                        right: -50px;
+            }
             content: "";
             display: block;
             height: 0;
             position: absolute;
-            right: -50px;
             top: 0;
             width: 0;
             z-index:2;
@@ -117,7 +129,11 @@
 
       &.triangle-up-left {
         &:before{
+                 border-left: 35px solid $color-red-hover;   
+        @media (min-width: 768px) {
             border-left: 50px solid $color-red-hover;
+        }
+
         }
       }
 
