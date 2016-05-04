@@ -142,6 +142,7 @@ padding: 20px 37px;
   }
 }
 
+
 // Mobile
 
 @media (max-width: 767px) {
@@ -162,8 +163,9 @@ padding: 20px 37px;
 
         h2 {
           font-size: 29px;
-          line-height: 1em;
+          line-height: 1.5em;
           margin-top: 0;
+          margin-bottom: 40px;
         }
 
         p {
