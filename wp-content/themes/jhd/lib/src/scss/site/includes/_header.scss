@@ -45,6 +45,9 @@
           position: relative;
           background: $color-header-navigation url("../../dist/img/navigation/bg-navigation.gif") no-repeat scroll;
           background-size: contain;
+          @media (max-width: 768px) {
+            background-image: none;
+          }
 
           li {
             @media (min-width: 768px) {
