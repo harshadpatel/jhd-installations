@@ -22,7 +22,7 @@
                     </div>
                     <div class="copy">
                         <blockquote>
-                            MWelcome to JHG Installations. We are a very reputable and established sign installation company with many years of 
+                            Welcome to JHG Installations. We are a very reputable and established sign installation company with many years of 
                         </blockquote>
                         <span class="name">
                             Mr J Smith - Shell

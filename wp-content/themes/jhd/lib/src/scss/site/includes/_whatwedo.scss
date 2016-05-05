@@ -3,7 +3,7 @@
   padding: 30px 0;
   @media (min-width: 768px) {
   padding: 70px 0;
-  padding-bottom: 115px;
+  padding-bottom: 30px;
   }
 
   .content {
@@ -37,6 +37,18 @@
       content: "";
       bottom: -5px;
       left: 5%;
+    }
+  }
+
+    .bottom-cta {
+  margin-top: 60px;
+  text-align: center;
+  @media (max-width: 767px) {
+margin-top: 40px;
+  }
+  margin-bottom: 30px;
+    .btn {
+      margin-right: 45px;
     }
   }
 

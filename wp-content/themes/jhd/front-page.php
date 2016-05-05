@@ -69,6 +69,9 @@
                 <?php /*<div class="col-xs-12 col-sm-4 image">
                     <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/page-home/about/miriam.jpg" class="img-responsive-full">
                 </div>*/?>
+                                    <div class="bottom-cta">
+                        <a href="/about-me/" class="btn-red triangle-orig">See our services</a>
+                    </div>
             </div>
         </div>
     </div>
