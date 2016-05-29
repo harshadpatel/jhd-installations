@@ -1,4 +1,32 @@
+    <div class="accreditions">
+<div class="row">
+        <div class="container">
+            <hr>
+            <div class="logos">
+            <div class="col-xs-12 col-sm-3">
+                 <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/shared/accreditions/pasma.jpg" class="img-responsive center-block">   
+            </div>
+                        <div class="col-xs-12 col-sm-3">
+                 <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/shared/accreditions/ipaf.jpg" class="img-responsive center-block">   
+            </div>
+                        <div class="col-xs-12 col-sm-3">
+                 <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/shared/accreditions/cscs.jpg" class="img-responsive center-block">   
+            </div>
+                        <div class="col-xs-12 col-sm-3">
+                 <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/shared/accreditions/constructionskills.jpg" class="img-responsive center-block">   
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
 <footer>
+
+
+
+
+</div>
 
     <div class="footer-top">
         <div class="container">

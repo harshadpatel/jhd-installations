@@ -1,4 +1,4 @@
-body.about-me {
+body.about-us {
 
   .banner {
 
@@ -13,14 +13,74 @@ body.about-me {
     }
   }
 
+
+
   .about {
     background: none;
-    padding-bottom: 130px;
+    padding-bottom: 55px;
+
+      .subheading {
+    text-transform: none;
+    color: #1f1e1e;
+    font-size: 50px;
+    padding-top: 80px;
+    margin-bottom: 130px;
+
+    span {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    border-bottom: 0;
+
+      &:after {
+        border-bottom: 5px solid $color-global-green;
+        bottom: -22px;
+        content: "";
+        left: 5%;
+        position: absolute;
+        width: 90%;
+      }
+    }
+  }
+
+  .image {
+      margin-right: 30px;
+  }
+
+  .copy {
+      border-bottom: #b8b8b8 1px solid;
+    h3, h4 {
+        font-size: 32px;
+    font-weight: bold;
+    color: $color-global-green;
+    margin-bottom: 60px;
+    padding-bottom: 55px;
+    }
+
+    h4 {
+      margin-top: 57px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 28px;
+      line-height: 44px;
+    }
+  }
   }
 
   .work {
     background: url("../../dist/img/page-about-me/work/work.jpg") no-repeat left top / 100%;
     height: 8vw;
+  }
+
+  .recent-work {
+    padding-top: 5px;
+    padding-bottom: 17px;
+
+    h2 {
+      margin-bottom: 83px;
+    }
   }
 
 }
