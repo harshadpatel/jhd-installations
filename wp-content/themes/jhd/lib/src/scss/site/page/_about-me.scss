@@ -26,6 +26,12 @@ body.about-us {
     padding-top: 80px;
     margin-bottom: 130px;
 
+    @media (max-width: 767px) {
+      font-size: 28px;
+      margin-bottom: 45px;
+      padding-top: 40px;
+    }
+
     span {
     padding-left: 0;
     padding-right: 0;
@@ -45,26 +51,42 @@ body.about-us {
 
   .image {
       margin-right: 30px;
+      @media (max-width: 767px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
   }
 
   .copy {
+  @media (max-width: 767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
       border-bottom: #b8b8b8 1px solid;
     h3, h4 {
         font-size: 32px;
     font-weight: bold;
     color: $color-global-green;
     margin-bottom: 60px;
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
     padding-bottom: 55px;
     }
 
     h4 {
       margin-top: 57px;
       margin-bottom: 10px;
+            padding-bottom: 0;
     }
 
     p {
       font-size: 28px;
       line-height: 44px;
+      @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: inherit;
+      }
     }
   }
   }

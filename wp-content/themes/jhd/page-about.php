@@ -13,7 +13,9 @@ get_header();
                 <h1 class="subheading"><span><?php the_title(); ?></span></h1>
                 <div class="content">
                 <div class="col-xs-12 col-sm-5 image">
+                    <div class="row">
                     <img src="<?php echo get_template_directory_uri() ?>/lib/dist/img/page-about-me/imagegrey.jpg" class="img-responsive-full">
+                    </div>
                 </div>
                 <div class="copy">
 
