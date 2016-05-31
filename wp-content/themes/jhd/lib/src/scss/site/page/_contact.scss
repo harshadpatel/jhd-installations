@@ -1,42 +1,90 @@
 body.contact {
 
+.col-sm-8 {
+  width: 69.667%;
+}
+
+.col-sm-4 {
+    width: 27.333%
+}
+
   .map {
 
     background: $color-testimonials-banner-bg url("../../dist/img/page-contact/map/bg-map.jpg") no-repeat center / cover;
-    padding-top: 405px;
-    margin-bottom: 50px;
+
+          .subheading {
+    text-transform: none;
+    color: #1f1e1e;
+    font-size: 50px;
+    padding-top: 80px;
+    margin-bottom: 152px;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      margin-bottom: 45px;
+      padding-top: 40px;
+    }
+
+    span {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    border-bottom: 0;
+
+      &:after {
+        border-bottom: 5px solid $color-global-green;
+        bottom: -22px;
+        content: "";
+        left: 5%;
+        position: absolute;
+        width: 90%;
+      }
+    }
+  }
 
   }
 
   .content {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  .subheading {
-    span {
-      display: block;
-    }
-  }
 
   .details {
-    border-left: 1px solid $color-page-contact-details-border;
+    background: #ca233a;
     font-family: open_sansregular, Arial, Helvetica;
-    margin-top: 10px;
+    margin-top: 30px;
+        margin-left: 29px;
+    padding-left: 30px;
+    padding-right: 22px;
+    min-height: 380px;
+
+    h3 {
+    font-size:22px;
+    text-align: center;
+    margin-top: 23px;
+    padding-bottom: 18px;
+    margin-bottom: 37px;
+    @include raleway-bold;
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+    }
     ul {
       @include reset-list-reset;
       li {
         background: url("../../dist/img/page-contact/details/bg-details.png") no-repeat top left;
         color: $color-page-contact-details-copy;
-        padding-left: 80px;
+        padding-left: 73px;
         min-height: 70px;
 
         a {
-          color: $color-page-contact-details-copy;
+          color: $color-white;
         }
 
         &.tel, &.email {
           padding-top: 15px;
+        }
+        &.tel a {
+          font-size: 28px;
         }
         &.email {
           background-position: 0 -220px;
@@ -75,10 +123,6 @@ body.contact {
           }
         }
       }
-    }
-
-    .details {
-      padding-right: 20px;
     }
 
   }
