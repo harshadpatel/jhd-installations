@@ -1,11 +1,80 @@
 body.contact {
 
-.col-sm-8 {
-  width: 69.667%;
+    .gravity-form {
+      padding-right: 20px;
+
+      .gform_wrapper {
+        ul {
+          &.gform_fields {
+            li {
+
+              width: 40%;
+              input, textarea {
+                width: 100%;
+                padding: 12px 15px;
+                border: 1px solid #ccc;
+              }
+              textarea {
+                height: 160px;
+              }
+              &#field_1_4 {
+                right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+.introduction {
+  margin-bottom: 45px;
 }
 
-.col-sm-4 {
-    width: 27.333%
+.col-lg-8 {
+  background: #e2dfd6 url("../../dist/img/page-contact/form/bg-form.jpg") repeat;
+  @media (min-width: 992px) {
+  width: 69.667%;
+  }
+  margin-top: 30px;
+  padding-top: 17px;
+  padding-left: 62px;
+  font-family:'Calibri', Arial, sans-serif;
+}
+
+#field_2_4 {
+@media (min-width: 768px) {
+    position: absolute;
+    right: 37px;
+    top: 135px;
+    width: 50%;
+    }
+
+    &.gfield_error.gfield_contains_required {
+    @media (min-width: 768px){
+        top: 155px;
+    }
+    @media (max-width: 480px) {
+        margin-top: 0!important;
+    }
+        border: 0;
+        background: 0;
+
+        .validation_message {
+          display: none;
+        }
+
+
+    textarea {
+      border: #c00 1px solid;
+    }
+    }
+
+}
+
+.col-lg-4 {
+  @media (min-width: 992px) {
+    width: 27.333%;
+    }
 }
 
   .map {
@@ -53,10 +122,13 @@ body.contact {
     background: #ca233a;
     font-family: open_sansregular, Arial, Helvetica;
     margin-top: 30px;
+      @media (min-width: 992px) {
         margin-left: 29px;
+            min-height: 380px;
+        }
     padding-left: 30px;
     padding-right: 22px;
-    min-height: 380px;
+
 
     h3 {
     font-size:22px;
@@ -105,25 +177,7 @@ body.contact {
 
 @media (min-width: 1170px) {
   body.contact {
-    .gravity-form {
-      padding-right: 20px;
 
-      .gform_wrapper {
-        ul {
-          &.gform_fields {
-            li {
-
-              input, textarea {
-                width: 93%;
-              }
-              &#field_1_4 {
-                right: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
 
   }
 }
@@ -147,9 +201,13 @@ body.contact {
 // Mobile
 
 @media (max-width: 767px) {
-  body.contact {
-    .map {
-      background-position: -533px 0;
-    }
-  }
+body.contact .gravity-form .gform_wrapper ul.gform_fields li {
+    width: 100%;
+}
+body.contact .gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+     margin-bottom: 0!important;
+    margin-top: 0px;
+    padding-left: 0px !important;
+
+}
 }

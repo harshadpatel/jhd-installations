@@ -21,14 +21,14 @@ get_header();
 
         <div class="content">
             <div class="row">
-                <div class="col-xs-12 col-sm-8">
-                 <h2><?php the_title(); ?></h2>
+                <div class="col-xs-12 col-lg-8 contact-us-form">
+                 <h2 class="text-center"><?php the_title(); ?></h2>
                 <?php the_field('intro'); ?>
                     <div class="gravity-form">
-                        <?php gravity_form(1, $display_title=false, $display_description=true, $display_inactive=false, $field_values=null, $ajax=false, $tabindex); ?>
+                        <?php gravity_form(2, $display_title=false, $display_description=true, $display_inactive=false, $field_values=null, $ajax=false, $tabindex); ?>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 details">
+                <div class="col-xs-12 col-lg-4 details">
                         <h3>Get in touch for a quote</h3>
                     <ul>
                         <li class="tel"><?php the_field('number'); ?></li>
