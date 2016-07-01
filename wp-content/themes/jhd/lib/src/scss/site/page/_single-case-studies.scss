@@ -1,4 +1,4 @@
-body.case-studies {
+.single-case-studies {
 
           .subheading {
     text-transform: none;
@@ -203,18 +203,19 @@ body.single-case-studies {
   }
 
   .article {
-    padding-top: 40px;
+    padding-top: 76px;
 
     h2 {
       color: $color-single-studies-article-heading;
-      font-size: 60px;
+      font-size: 33px;
       margin-top: 0;
+      text-transform: none;
     }
 
     p {
       color: $color-single-studies-article-copy;
-      font-family: open_sansregular, Arial, Helvetica;
-      line-height: 24px;
+    font-size: 26px;
+    line-height: 47px;
     }
 
     .content {
@@ -259,12 +260,13 @@ body.single-case-studies {
         color: $color-clients-heading;
         font-size: 60px;
         margin-top: 0;
+        margin-bottom: 28px;
       }
 
       p {
         color: $color-single-studies-treatment-copy;
-        font-family: "open_sansregular", Arial, Helvetica;
         line-height: 25px;
+        font-size: 28px;
       }
 
       .btn {
@@ -417,16 +419,16 @@ body.single-case-studies {
       .content {
         padding-top: 40px;
         padding-bottom: 40px;
+      }
 
-        &.during {
-          text-align: center;
-          padding-left: 0;
+      p {
+       font-size: 18px;
+    line-height: 24px;
+      }
 
-          .image {
+                .image {
             margin-bottom: 30px;
           }
-        }
-      }
     }
   }
 }
