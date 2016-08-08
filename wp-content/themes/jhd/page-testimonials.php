@@ -7,17 +7,14 @@ get_header();
 
 ?>
 
-    <div class="banner">
-    </div>
-
     <div class="page-testimonials">
         <div class="article">
             <article>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-5 center-col-block">
+                        <div class="col-xs-12 col-sm-12 center-col-block">
 
-                            <h1 class="subheading"><span><?php the_title(); ?></span></h1>
+                            <h1 class="subheading"><span>Our <?php the_title(); ?></span></h1>
                             <?php the_field('intro'); ?>
 
                         </div>
@@ -34,10 +31,12 @@ get_header();
                                 <?php $i = 1; ?>
                                 <?php while(has_sub_field('testimonial')) : ?>
 
-                                    <div class="col-xs-10 center-col-block copy">
-
-                                        <blockquote><?php the_sub_field('review'); ?></blockquote>
+                                    <div class="col-xs-12 center-col-block copy <?php echo (++$j % 2 == 0) ? 'evenpost' : 'oddpost'; ?>">
+                                        <div class="col-xs-12 col-md-6 quoteimg"><img src="<?php the_sub_field('image'); ?>" class="img-responsive-full"></div>
+                                        <div class="col-xs-12 col-md-6 quotecopy">
+                                       <blockquote><span class="quote"></span><?php the_sub_field('review'); ?><span class="quote2"></span></blockquote>
                                         <span class="name"><?php the_sub_field('client'); ?></span>
+                                    </div>
 
                                     </div>
 
@@ -52,16 +51,13 @@ get_header();
                             <?php endif; ?>
 
 
-                            <a class="btn btn-cta-light-green" href="https://www.facebook.com/EliteSemiPermanentMakeup" target="_blank">Read more reviews on my Facebook page &gt;</a>
+
                         </div>
                     </div>
                 </div>
 
             </article>
         </div>
-    </div>
-
-    <div class="banner bottom">
     </div>
 
 <?php get_template_part('partials/contact'); ?>

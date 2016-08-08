@@ -1,5 +1,43 @@
 body.testimonials {
 
+
+          .subheading {
+    text-transform: none;
+    color: #1f1e1e;
+    font-size: 50px;
+    padding-top: 0;
+    margin-bottom: 72px;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      margin-bottom: 45px;
+      padding-top: 40px;
+    }
+
+    span {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    border-bottom: 0;
+
+      &:after {
+         border-bottom: 5px solid #d30061;
+            bottom: -30px;
+            content: "";
+            left: 20%;
+            position: absolute;
+            width: 65%;
+      }
+    }
+  }
+
+    .introduction {
+ @include raleway-bold;
+ font-size: 26px;
+ font-weight: normal;
+ line-height: 49px;
+  }
+
   .banner {
 
     background: $color-testimonials-banner-bg url("../../dist/img/page-testimonials/banner/bg-banner-top.jpg") no-repeat center / cover;
@@ -11,37 +49,79 @@ body.testimonials {
     }
   }
 
+
   .page-testimonials {
     padding-bottom: 75px;
-    padding-top: 60px;
+    padding-top: 70px;
 
     .content {
       padding-top: 30px;
     }
 
     .copy {
-      padding-top: 70px;
+      padding-top: 25px;
 
       .name {
-        border-left: 1px solid $color-global-green;
-        color: $color-global-green;
         font-family: open_sansregular,Arial,Helvetica;
-        font-size: 24px;
-        letter-spacing: 1px;
-        padding-left: 15px;
         margin-bottom: 50px;
         display: block;
-        text-transform: uppercase;
+        font-size: 18px;
+        font-style: italic;
+        text-align: right;
       }
     }
 
     blockquote {
-      background: url("../../dist/img/page-testimonials/backgrounds/bg-stars.png") no-repeat top center;
       color: $color-page-testimonials-copy;
-      font-size: 24px;
-      font-style: italic;
-      line-height: 40px;
-      padding: 90px 0 45px 0;
+      font-size: 18px;
+      line-height: 30px;
+       @media (min-width: 992px) {
+      padding: 102px 0 8px 0;
+      }
+      position: relative;
+
+      span.quote {
+              background: url("../../dist/img/page-testimonials/content/bg-quotes.png") no-repeat top left;
+              width: 45px;
+              height: 20px;
+              display: inline-block;
+      }
+
+      span.quote2 {
+              background: url("../../dist/img/page-testimonials/content/bg-quotes.png") no-repeat bottom right;
+              width: 45px;
+              height: 20px;
+              display: inline-block;
+      }
+
+      p {
+        display: inline;
+      }
+    }
+
+    .quotecopy {
+      padding: 0;
+    }
+
+    .oddpost {
+      
+      @media (min-width: 992px) {
+      .quoteimg {
+        left: 50%;
+      }
+
+      .quotecopy {
+      right: 50%;
+      padding-right: 20px;
+      }
+
+      }
+
+    }
+
+    .quoteimg {
+    padding-bottom: 65px;
+    padding-top: 76px;
     }
 
     .btn {
