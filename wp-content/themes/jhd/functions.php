@@ -43,3 +43,10 @@ function paginate() {
 
     return paginate_links( $pagination );
 }
+
+/**
+ * Thumbnails
+ */
+
+    // This theme uses post thumbnails
+    add_theme_support( 'post-thumbnails' );

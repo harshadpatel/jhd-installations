@@ -8,11 +8,32 @@
   .btn-red.with-border.triangle-up-left {
       text-transform: uppercase;
       padding-top: 21px;
+      @media (min-width: 992px) {
+        padding-bottom: 7%;
+      }
       @media (max-width: 991px) {
     padding-bottom: 12px;
     padding-left: 40px;
     padding-top: 14px;
     text-transform: uppercase;
+
+    &:before {
+       border-bottom: 56px solid transparent;
+    border-left: 35px solid #ca233a;
+    right: -35px;
+    }
+    &:hover {
+          &:before {
+       border-bottom: 56px solid transparent;
+    border-left: 35px solid #991729;
+    right: -35px;
+    }
+    }
+    &:after {
+    border-bottom: 70px solid transparent;
+    border-left: 47px solid rgba(255, 0, 0, 0.3);
+    right: -47px;
+    }
       }
 
   }

@@ -1,35 +1,163 @@
 .page-blog {
 
+background: #EDEDED;
+
+.content-bg {
+  background: #fff;
+      margin-bottom: 30px;
+    min-height: 715px;
+}
+
+.title a {
+  color: $color-page-blog-item-link;
+  text-decoration: none;
+  font-size: 23px;
+
+
+}
+
+.copy {
+  padding: 0 27px 27px;
+  min-height: 248px;
+
+  p {
+   font-family: Raleway, "Times New Roman", "Bitstream Charter", Times, serif;
+      font-size: 16px;
+    margin-bottom: 18px;
+
+     &:first-child {
+        margin-bottom: 0;
+     }
+      &:last-child {
+        margin-bottom: 0;
+     }
+  }
+}
+
+.button {
+  padding-left: 27px;
+}
+
+.button a {
+   font-family: Raleway, "Times New Roman", "Bitstream Charter", Times, serif;
+    text-transform: uppercase;
+       font-size: 16px;
+    padding-left: 20px;
+    text-transform: uppercase;
+
+      &:before {
+  border-left: 25px solid #ca233a;
+  border-bottom: 47px solid transparent;
+  right: -25px;
+  }
+
+  &:hover {
+        &:before {
+  border-left: 25px solid #991729;
+  border-bottom: 47px solid transparent;
+  right: -25px;
+  }
+  }
+}
+
+.item .image img {
+    display: block!important;
+    height: auto!important;
+    max-width: 100%!important;
+        width: 100% !important;
+}
+
+.item .col-md-12 .image {
+  width: 31%;
+  float: left;
+
+      @media (max-width: 767px) {
+       float: none;
+    margin-left: 0px;
+    width: auto;
+    }
+}
+
+.item .col-md-12 .copy {
+  min-height: auto;
+}
+
+.item .col-md-12 .content-bg {
+  min-height: auto;
+  overflow: hidden;
+}
+
+.item .col-md-12 .title h2 {
+  padding-top: 7px;
+  text-align: left;
+}
+
+.item .col-md-12 .content-right {
+    float: left;
+    margin-left: 15px;
+    width: 66%;
+    padding-bottom: 30px;
+
+    @media (max-width: 767px) {
+       float: none;
+    margin-left: 0px;
+    width: auto;
+    }
+}
+
   .banner {
-
-    background: $color-page-blog-banner-bg url("../../dist/img/page-blog/banner/bg-banner.jpg") no-repeat center / cover;
-    padding: 130px 0;
+    padding: 75px 0;
+    padding-bottom: 0;
   }
 
-  .subheading {
-    color: $color-page-blog-highlighter;
-    background: url("../../dist/img/page-blog/sub-heading/bg-hearts.png") no-repeat scroll center top transparent;
-    padding-top: 50px;
+          .subheading {
+    text-transform: none;
+    color: #1f1e1e;
+    font-size: 50px;
+    padding-top: 0;
+    margin-bottom: 72px;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      margin-bottom: 45px;
+      padding-top: 40px;
+    }
+
+    span {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    border-bottom: 0;
+
+      &:after {
+         border-bottom: 5px solid #d30061;
+            bottom: -30px;
+            content: "";
+            left: 20%;
+            position: absolute;
+            width: 65%;
+      }
+    }
   }
+
 
 
   .content {
     font-family: open_sansregular, Arial, Helvetica;
-    padding-top: 85px;
+    padding-top: 35px;
     padding-bottom: 50px;
 
     h2 {
-      background: url("../../dist/img/page-blog/backgrounds/bg-header-dots.png") repeat-x scroll bottom transparent;
       font-family: open_sansregular, Arial, Helvetica;
       font-size: 36px;
       margin-top: 0;
-      margin-bottom: 15px;
-      padding-bottom: 20px;
+      margin-bottom: 0px;
       text-transform: none;
+      padding: 27px 27px 15px;
 
       a {
         &:hover {
-          color: $color-anchor-default
+          color: $color-anchor-default;
         }
       }
     }
@@ -37,8 +165,6 @@
     .article {
 
       &.item {
-        margin-bottom: 30px;
-        overflow: hidden;
       }
 
       .date {
@@ -243,7 +369,15 @@
         margin-right: -15px;
       }
     }
+
+
   }
+
+  .page-blog .item .col-md-12 .content-bg {
+    min-height: auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
 }
 
 // Mobile only
@@ -252,6 +386,10 @@
   .page-blog {
     .banner {
       padding: 30px 0;
+    }
+
+    .copy {
+      min-height: auto;
     }
 
     .subheading {
@@ -263,6 +401,7 @@
 
       h2 {
         font-size: 30px;
+        text-align: left;
       }
     }
   }
