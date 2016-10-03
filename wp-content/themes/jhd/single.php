@@ -13,15 +13,7 @@
                         <div class="article">
                             <article>
                                 <?php while ( have_posts() ) : the_post(); ?>
-                                <div class="col-xs-12 col-md-2 post-date">
-                                    <div class="row">
-                                        <span class="date">
-                                            <span><?php the_time('M'); ?></span>
-                                            <span><?php the_time('y'); ?></span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-10 post-content">
+                                 <div class="col-xs-12 col-md-12 post-title">
                                     <h2><?php the_title(); ?></h2>
                                     <?php the_content(); ?>
                                     <?php /* if ( comments_open() || get_comments_number() ) {
@@ -32,9 +24,9 @@
                             </article>
                         </div>
                     </div>
-
-                    <?php get_sidebar(); ?>
-
+<div class="col-sm-3">
+<?php dynamic_sidebar( 'home_right_1' ); ?>
+</div>
                 </div>
             </div>
         </div>

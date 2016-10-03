@@ -147,7 +147,7 @@ background: #EDEDED;
     padding-top: 35px;
     padding-bottom: 50px;
 
-    h2 {
+    .item h2 {
       font-family: open_sansregular, Arial, Helvetica;
       font-size: 36px;
       margin-top: 0;
@@ -160,6 +160,15 @@ background: #EDEDED;
           color: $color-anchor-default;
         }
       }
+    }
+
+    .post-title h2 {
+    padding: 0;
+    padding-bottom: 30px;
+       font-family: Raleway, "Times New Roman", "Bitstream Charter", Times, serif;
+       color: $color-global-green;
+       text-transform: none;
+       font-size: 36px;
     }
 
     .article {
@@ -333,6 +342,10 @@ background: #EDEDED;
     }
 
   }
+}
+
+.single .page-blog {
+  background-color: #fff;
 }
 
 // Media Queries

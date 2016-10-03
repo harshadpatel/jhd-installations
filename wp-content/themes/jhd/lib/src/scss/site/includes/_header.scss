@@ -107,7 +107,7 @@
             }
           }
 
-          .current-menu-item a:first-of-type {
+          .current-menu-item a:first-of-type, .current_page_parent a:first-of-type {
                      border-bottom: 3px $color-navigation-border solid;
           @media (min-width: 768px) {
              border-bottom: 19px $color-navigation-border solid;
